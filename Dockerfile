@@ -1,12 +1,6 @@
 FROM node:onbuild
 
+ENV zk_host=zk:2181
+ENV stream=rsvps
 
-# RUN mkdir /opt/kafka-websocket
-# COPY src /opt/kafka-websocket
-# WORKDIR /opt/kafka-websocket
-
-# RUN npm install kafka-node
-# RUN npm install websocket
-# RUN npm install minimist
-
-CMD node ws_rsvps.js --stream rsvps --zk zk:2181
+CMD node ws_rsvps.js --stream ${stream} --zk ${zk-host}
