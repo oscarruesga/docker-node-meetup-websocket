@@ -1,0 +1,12 @@
+{
+  "name": "meetup-ws-rsvps",
+  "description": "A websocker reader from Meetup Stream API and Kafka Producer",
+  "author": "Oscar Ruesga <oscar.ruesga@gmail.com>",
+  "main": "ws_rsvps.js",
+  "dependencies": {
+    "kafka-node": "0.x.x",
+    "websocket": "1.0.x",
+    "minimist": "1.2.x"
+  },
+  "license": "MIT"
+}
