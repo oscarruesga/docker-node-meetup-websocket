@@ -23,8 +23,3 @@ or
 ```
 docker run -d -h sandbox oscarruesga/node-meetup-websocket:latest -d
 ```
-
-## Versions
-```
-Hadoop 2.6.0 and Apache Spark v1.5.1 on Centos 
-```
