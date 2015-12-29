@@ -5,7 +5,7 @@ var minimist = require('minimist')
 var args = minimist(process.argv.slice(2), {
   string: 'stream',
   string: 'zk',
-  default: { stream: 'RSVPS', zk: 'kafka:2181' },
+  default: { stream: 'RSVPS', zk: 'localhost:2181' },
 });
 
 
