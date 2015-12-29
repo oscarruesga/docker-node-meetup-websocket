@@ -19,5 +19,8 @@ var args = minimist(process.argv.slice(2), {
     console.log('ws_rsvps.js has exited after 5 restarts');
   });
  
-  console.log ('Starting Websocket stream: ' + args.stream + ' zk-host: ' + args.zk);
+  
+  setTimeout(function() {
+  	console.log ('Starting Websocket stream: ' + args.stream + ' zk-host: ' + args.zk);
+  }, 5000);
   //child.start();
