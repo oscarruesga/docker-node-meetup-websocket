@@ -10,7 +10,7 @@ var args = minimist(process.argv.slice(2), {
  
   var child = new (forever.Monitor)('ws_rsvps.js', {
     max: 5,
-    silent: true,
+    silent: false,
     args: [args.stream, args.zk],
     'spinSleepTime': 5000,
   });
@@ -19,4 +19,5 @@ var args = minimist(process.argv.slice(2), {
     console.log('ws_rsvps.js has exited after 5 restarts');
   });
  
+  console.log ('Starting Websocket stream: ' + args.stream + ' zk-host: ' + args.zk);
   child.start();
