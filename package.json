@@ -6,7 +6,8 @@
   "dependencies": {
     "kafka-node": "0.x.x",
     "websocket": "1.0.x",
-    "minimist": "1.2.x"
+    "minimist": "1.2.x",
+    "forever-monitor": "1.7.x"
   },
   "license": "MIT"
 }
