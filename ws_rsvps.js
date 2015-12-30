@@ -8,6 +8,7 @@ var args = minimist(process.argv.slice(2), {
   default: { stream: 'RSVPS', zk: 'kafka:2181' },
 });
 
+args.zk = 'kafka.meetup.oscarruesga.svc.tutum.io:2181';
 
 var kafka = require('kafka-node');
 var Producer = kafka.Producer;
